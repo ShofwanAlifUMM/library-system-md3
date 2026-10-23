@@ -20,15 +20,15 @@ $Library -> addBook($book2);
 
 // pinjam buku awalnya hanya melalui class buku itu sendiri
 // initially, borrowing a book is only done through the book class itself
-$book1 -> borrow();
+// $book1 -> borrow();
 
 // sekarang anggota bisa meminjam buku langsung
 // now members can borrow books directly
 $member -> borrowBook($book1);
 
-echo "Member: " . $member->getName() . PHP_EOL;
+echo "Member : " . $member->getName() . PHP_EOL;
 echo PHP_EOL;
-echo "Borrowed Books" . PHP_EOL;
+echo "Library Books" . PHP_EOL;
 
 $Library -> listBooks();
 echo PHP_EOL;
